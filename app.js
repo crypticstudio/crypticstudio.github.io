@@ -12,7 +12,7 @@ const projects = {
   mobis: {
     number: '01',
     title: 'HYUNDAI MOBIS\nBRAND FILM',
-    year: '2026',
+    year: '2025',
     role: 'Planning / Direction',
     description: '새로운 브랜드 메시지를 어떻게 시각적 메시지로 보여줄 것인가에서 시작했습니다. 모빌리티를 상징하는 키워드를 장면과 움직임으로 연결하고, 전체 필름이 하나의 흐름으로 읽히도록 기획과 연출을 설계했습니다.',
     gallery: () => `
@@ -35,7 +35,7 @@ const projects = {
   inspire: {
     number: '02',
     title: 'INSPIRE RESORT\nAURORA',
-    year: '2026',
+    year: '2024',
     role: 'Planning / Direction',
     description: '화면의 크기보다 중요한 것은 그 공간에서 무엇을 느끼게 할 것인가였습니다. Aurora의 압도적인 스케일과 구조를 이해하고 콘텐츠가 사람들의 마음을 압도할 수 있도록 경험을 설계했습니다.',
     gallery: () => `
@@ -72,7 +72,7 @@ const projects = {
   lineage: {
     number: '04',
     title: 'NC SOFT\nLINEAGE W',
-    year: '2026',
+    year: '2024',
     role: 'Planning / Direction',
     description: '짧은 한 장면만으로도 캐릭터의 성격이 느껴지게 하는 데 집중했습니다. 캐릭터와 전투, 스케일이 단계적으로 커지도록 장면을 설계하고 시네마틱에서 몰입감이 점점 올라가도록 흐름을 연출했습니다.',
     gallery: () => `
@@ -207,7 +207,18 @@ function syncVisibleMotion() {
           - Math.abs((bRect.top + bRect.bottom) / 2 - center);
       });
 
-    const selected = candidates[0];
+    let selected = candidates[0];
+    if (selected) {
+      const selectedRect = selected.getBoundingClientRect();
+      const selectedCenter = (selectedRect.top + selectedRect.bottom) / 2;
+      const sameRow = candidates.filter(video => {
+        const rect = video.getBoundingClientRect();
+        return Math.abs((rect.top + rect.bottom) / 2 - selectedCenter) < 2;
+      });
+      if (sameRow.length > 1 && selectedCenter < window.innerHeight * 0.6) {
+        selected = sameRow[sameRow.length - 1];
+      }
+    }
     activePage.querySelectorAll('video.motion-loop').forEach(video => {
       if (video === selected) playMotion(video);
       else if (!video.closest('.work-row:hover')) pauseMotion(video);
