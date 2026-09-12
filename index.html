@@ -37,7 +37,6 @@
         <section class="featured-intro reveal">
           <div class="eyebrow">[ FEATURED WORK / 2026 ]</div>
           <h2>SELECTED<br>PROJECTS</h2>
-          <p>기획과 연출이 실제 화면이 된 작업들.</p>
         </section>
         <div class="featured-grid">
           <a class="feature feature-mobis reveal" href="#project/mobis">
@@ -64,7 +63,6 @@
         <div class="page-hero">
           <span class="eyebrow">[ 02 — WORK ]</span>
           <h1>IMAGE,<br>IN MOTION.</h1>
-          <p>필름, 캠페인, 공간. 장면과 움직임으로 만든 작업들.</p>
         </div>
 
         <section class="work-featured">
@@ -73,10 +71,16 @@
             <a class="work-row" href="#project/mobis">
               <span class="work-row-number">01</span>
               <div class="work-row-title"><strong>HYUNDAI MOBIS<br>BRAND FILM</strong><span>BRAND FILM / 2026</span></div>
-              <div class="work-row-visuals" aria-hidden="true">
+              <div class="work-row-visuals media-four" aria-hidden="true">
                 <img class="is-primary" src="assets/images/mobis-hero.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-                <img class="is-alt is-alt-one" src="assets/images/mobis-hero-02.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-one motion-loop featured-loop" autoplay muted loop playsinline preload="none" poster="assets/images/mobis-loop-01-poster.webp">
+                  <source data-src="assets/video/mobis-loop-01.mp4" type="video/mp4">
+                </video>
                 <img class="is-alt is-alt-two" src="assets/images/mobis-motion.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-three motion-loop featured-loop mobile-extra" autoplay muted loop playsinline preload="none" poster="assets/images/mobis-loop-04-poster.webp">
+                  <source data-src="assets/video/mobis-loop-04.mp4" type="video/mp4">
+                  <source data-src="assets/video/mobis-loop-v3.webm" type="video/webm">
+                </video>
               </div>
             </a>
             <a class="work-row" href="#project/inspire">
@@ -91,19 +95,31 @@
             <a class="work-row" href="#project/porsche">
               <span class="work-row-number">03</span>
               <div class="work-row-title"><strong>PORSCHE<br>SEOUL VIBE</strong><span>CAMPAIGN / 2026</span></div>
-              <div class="work-row-visuals" aria-hidden="true">
+              <div class="work-row-visuals media-four" aria-hidden="true">
                 <img class="is-primary" src="assets/images/porsche-thumb-v2.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-                <img class="is-alt is-alt-one" src="assets/images/porsche-hero.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-                <img class="is-alt is-alt-two" src="assets/images/porsche-hero-03.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-one motion-loop featured-loop" autoplay muted loop playsinline preload="none" poster="assets/images/porsche-loop-01-poster.webp">
+                  <source data-src="assets/video/porsche-loop-01.mp4" type="video/mp4">
+                  <source data-src="assets/video/porsche-loop-v3.webm" type="video/webm">
+                </video>
+                <img class="is-alt is-alt-two" src="assets/images/porsche-hero.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-three motion-loop featured-loop mobile-extra" autoplay muted loop playsinline preload="none" poster="assets/images/porsche-loop-03-poster.webp">
+                  <source data-src="assets/video/porsche-loop-03.mp4" type="video/mp4">
+                </video>
               </div>
             </a>
             <a class="work-row" href="#project/lineage">
               <span class="work-row-number">04</span>
               <div class="work-row-title"><strong>NC SOFT<br>LINEAGE W</strong><span>CINEMATIC FILM / 2026</span></div>
-              <div class="work-row-visuals" aria-hidden="true">
+              <div class="work-row-visuals media-four" aria-hidden="true">
                 <img class="is-primary" src="assets/images/lineage-thumb-v2.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-                <img class="is-alt is-alt-one" src="assets/images/lineage-hero.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-                <img class="is-alt is-alt-two" src="assets/images/lineage-hero-03.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-one motion-loop featured-loop" autoplay muted loop playsinline preload="none" poster="assets/images/lineage-loop-01-poster.webp">
+                  <source data-src="assets/video/lineage-loop-01.mp4" type="video/mp4">
+                  <source data-src="assets/video/lineage-loop-v3.webm" type="video/webm">
+                </video>
+                <img class="is-alt is-alt-two" src="assets/images/lineage-hero.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+                <video class="is-alt is-alt-three motion-loop featured-loop mobile-extra" autoplay muted loop playsinline preload="none" poster="assets/images/lineage-loop-04-poster.webp">
+                  <source data-src="assets/video/lineage-loop-04.mp4" type="video/mp4">
+                </video>
               </div>
             </a>
           </div>
@@ -112,67 +128,74 @@
         <section class="archive">
           <div class="section-head"><span>SELECTED ARCHIVE</span><span>2019 — 2025</span></div>
           <div class="archive-grid">
-            <article class="archive-piece archive-wide reveal">
+            <article class="archive-piece archive-wide reveal" data-archive="automotive" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/automotive-file.webp" alt="Automotive File" width="2200" height="1238" loading="lazy" decoding="async"></div>
               <p><span>01</span> AUTOMOTIVE FILE</p>
             </article>
-            <article class="archive-piece archive-duo reveal">
+            <article class="archive-piece archive-duo reveal" data-archive="blade2" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/blade-soul.webp" alt="Blade and Soul 2" width="1157" height="651" loading="lazy" decoding="async"><img src="assets/images/blade-soul-alt.webp" alt="Blade and Soul 2 alternate scene" width="1157" height="651" loading="lazy" decoding="async"></div>
               <p><span>02</span> BLADE &amp; SOUL 2</p>
             </article>
-            <article class="archive-piece archive-small reveal">
+            <article class="archive-piece archive-small reveal" data-archive="fragpunk" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/frag-punk.webp" alt="Frag Punk" width="1160" height="653" loading="lazy" decoding="async"></div>
               <p><span>03</span> FRAG PUNK</p>
             </article>
-            <article class="archive-piece archive-large reveal">
+            <article class="archive-piece archive-large reveal" data-archive="hdhyundai" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/hd-hyundai.webp" alt="HD Hyundai CES" loading="lazy" decoding="async"></div>
               <p><span>04</span> HD HYUNDAI CES</p>
             </article>
-            <article class="archive-piece archive-small archive-offset reveal">
+            <article class="archive-piece archive-small archive-offset reveal" data-archive="goyang" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/goyang.webp" alt="Hyundai Goyang Motorstudio" width="1716" height="965" loading="lazy" decoding="async"></div>
               <p><span>05</span> HYUNDAI GOYANG MOTORSTUDIO</p>
             </article>
-            <article class="archive-piece archive-middle reveal">
+            <article class="archive-piece archive-middle reveal" data-archive="mobisslogan" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/mobis-slogan.webp" alt="Hyundai Mobis Slogan" width="1920" height="1080" loading="lazy" decoding="async"></div>
               <p><span>06</span> HYUNDAI MOBIS SLOGAN</p>
             </article>
-            <article class="archive-piece archive-strip reveal">
+            <article class="archive-piece archive-strip reveal" data-archive="blader" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/blade-r-01.webp" alt="Blade and Soul R Geumgangsa" width="1162" height="654" loading="lazy" decoding="async"><img src="assets/images/blade-r-02.webp" alt="Blade and Soul R Gigongsa" width="1163" height="654" loading="lazy" decoding="async"><img src="assets/images/blade-r-03.webp" alt="Blade and Soul R Posulsa" width="1163" height="654" loading="lazy" decoding="async"></div>
               <p><span>07</span> BLADE &amp; SOUL R / CLASS FILMS</p>
             </article>
-            <article class="archive-piece archive-wide reveal">
+            <article class="archive-piece archive-wide reveal" data-archive="wia" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/hyundai-wia.webp" alt="Hyundai WIA CES" width="1920" height="1080" loading="lazy" decoding="async"></div>
               <p><span>08</span> HYUNDAI WIA CES</p>
             </article>
-            <article class="archive-piece archive-small reveal">
+            <article class="archive-piece archive-small reveal" data-archive="kia360" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/kia-360.webp" alt="KIA 360 Heritage" loading="lazy" decoding="async"></div>
               <p><span>09</span> KIA 360 HERITAGE</p>
             </article>
-            <article class="archive-piece archive-middle archive-offset reveal">
+            <article class="archive-piece archive-middle archive-offset reveal" data-archive="kiaconnect" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/kia-connect.webp" alt="KIA Connect Store KBO" width="1920" height="1080" loading="lazy" decoding="async"></div>
               <p><span>10</span> KIA CONNECT STORE / KBO</p>
             </article>
-            <article class="archive-piece archive-portrait reveal">
+            <article class="archive-piece archive-portrait reveal" data-archive="pyeongtaek" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/kia-pyeongtaek.webp" alt="KIA Pyeongtaek CXP" width="786" height="2200" loading="lazy" decoding="async"></div>
               <p><span>11</span> KIA 평택 CXP</p>
             </article>
-            <article class="archive-piece archive-large reveal">
+            <article class="archive-piece archive-large reveal" data-archive="lig" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/lig.webp" alt="LIG Heritage" width="2200" height="1238" loading="lazy" decoding="async"></div>
               <p><span>12</span> LIG HERITAGE</p>
             </article>
-            <article class="archive-piece archive-duo reveal">
+            <article class="archive-piece archive-duo reveal" data-archive="musports" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/mu-sports.webp" alt="MU Sports Brand Film" width="2200" height="1343" loading="lazy" decoding="async"><img src="assets/images/mu-sports-alt.webp" alt="MU Sports Brand Film alternate scene" width="1920" height="1080" loading="lazy" decoding="async"></div>
               <p><span>13</span> MU SPORTS BRAND FILM</p>
             </article>
-            <article class="archive-piece archive-wide reveal">
+            <article class="archive-piece archive-wide reveal" data-archive="firststep" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/first-step.webp" alt="The First Step" width="1169" height="585" loading="lazy" decoding="async"></div>
               <p><span>14</span> THE FIRST STEP</p>
             </article>
-            <article class="archive-piece archive-small archive-offset reveal">
+            <article class="archive-piece archive-small archive-offset reveal" data-archive="hoyeon" role="button" tabindex="0" aria-expanded="false">
               <div class="archive-media"><img src="assets/images/hoyeon.webp" alt="Hoyeon Ryuara" width="1163" height="654" loading="lazy" decoding="async"></div>
               <p><span>15</span> 호연 류아라편</p>
             </article>
           </div>
+          <aside class="archive-expansion" id="archive-expansion" hidden aria-live="polite">
+            <header>
+              <div><span>SELECTED PROJECT</span><h2 id="archive-expansion-title"></h2></div>
+              <button type="button" id="archive-expansion-close">CLOSE ×</button>
+            </header>
+            <div class="archive-expansion-track" id="archive-expansion-track"></div>
+          </aside>
         </section>
       </section>
 
@@ -192,8 +215,18 @@
           </article>
           <article class="rnd-project os reveal">
             <div class="project-number">02 / CRYPTIC INTELLIGENCE OS</div>
-            <div class="os-copy"><h2>EXPLORE WIDER.<br>DECIDE BETTER.</h2><p>하나의 아이디어를 여러 방향에서 살펴보고, 그중 가장 가능성 있는 방향을 선택해 발전시키기 위한 CRYPTIC의 내부 시스템입니다.</p></div>
-            <img src="assets/images/creative-os.webp" alt="CRYPTIC Intelligence OS visual exploration" loading="lazy" decoding="async">
+            <div class="os-copy">
+              <h2>EXPLORE WIDER.<br>DECIDE BETTER.</h2>
+              <p>하나의 아이디어를 여러 방향에서 살펴보고, 그중 가장 가능성 있는 방향을 선택해 발전시키기 위한 CRYPTIC의 내부 시스템입니다.</p>
+              <p>레퍼런스 탐색부터 비주얼 방향 비교, 선택과 구체화까지 하나의 흐름으로 연결합니다. 여러 가능성을 빠르게 확인하면서도 프로젝트의 방향이 흐려지지 않도록 돕습니다.</p>
+            </div>
+            <img class="os-interface" src="assets/images/creative-os.webp" alt="CRYPTIC Intelligence OS workspace" loading="lazy" decoding="async">
+            <div class="os-results">
+              <img src="assets/images/os-result-01.webp" alt="Visual result developed through CRYPTIC Intelligence OS" loading="lazy" decoding="async">
+              <img src="assets/images/os-result-02.webp" alt="Visual result developed through CRYPTIC Intelligence OS" loading="lazy" decoding="async">
+              <img src="assets/images/os-result-03.webp" alt="Visual result developed through CRYPTIC Intelligence OS" loading="lazy" decoding="async">
+              <img src="assets/images/os-result-04.webp" alt="Visual result developed through CRYPTIC Intelligence OS" loading="lazy" decoding="async">
+            </div>
           </article>
           <article class="rnd-project study reveal">
             <div class="project-number">03 / VISUAL STUDIES</div>
@@ -222,6 +255,10 @@
             <article><span>03</span><h2>EXECUTION</h2><p>구도, 톤, 움직임을 실제 결과물로 연결합니다.</p></article>
           </div>
         </div>
+        <section class="network reveal">
+          <p>Creative Direction을 중심으로 AI와 모션그래픽을 활용해 표현의 폭을 넓히고, 프로젝트의 성격과 규모에 따라 전문 제작 파트너와 협업합니다. 고정된 방식보다 프로젝트에 필요한 역량을 유연하게 연결해 가장 적합한 제작 방식을 선택합니다.</p>
+          <span>CREATIVE DIRECTION / AI / 2D &amp; MOTION / 3D / EDIT / COMPOSITING / SOUND</span>
+        </section>
       </section>
 
       <section class="page contact-page" data-page="contact">
